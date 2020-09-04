@@ -20,11 +20,11 @@ function numRandom(){
 // creo funzione timer
 setTimeout(function(){
 // creo array num ricordati
-var numRicordati = [];
+var arrayNumRicordati = [];
 for (var i = 0; i < 5; i++) {
   var numRicordati = parseInt(prompt("Inserire un numero"));
   if (numCasuali.includes(numRicordati)){
-    
+
   }
 }
 }
