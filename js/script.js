@@ -5,6 +5,7 @@
 // creo alert num casuali
 var numCasuali = numRandom();
 alert(numCasuali);
+
 // creo funzione numeri casuali da 1 a 100
 function numRandom(){
   var arrayRandom = [];
@@ -18,14 +19,15 @@ function numRandom(){
 
 
 // creo funzione timer
-setTimeout(function(){
+setTimeout (function(){
 // creo array num ricordati
 var arrayNumRicordati = [];
 for (var i = 0; i < 5; i++) {
   var numRicordati = parseInt(prompt("Inserire un numero"));
   if (numCasuali.includes(numRicordati)){
-
+    arrayNumRicordati.push(numRicordati);
+console.log('I numeri memorizzati da te sono: ' + arrayNumRicordati + ' allora i numeri indovinati sono '+ arrayNumRicordati.length);
   }
 }
-}
-)
+
+}, 30000);
