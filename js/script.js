@@ -27,7 +27,9 @@ for (var i = 0; i < 5; i++) {
   if (numCasuali.includes(numRicordati)){
     arrayNumRicordati.push(numRicordati);
 console.log('I numeri memorizzati da te sono: ' + arrayNumRicordati + ' allora i numeri indovinati sono '+ arrayNumRicordati.length);
-  }
+}else{
+  alert("numero non ricordato!");
+}
 }
 
 }, 30000);
